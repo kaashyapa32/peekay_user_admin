@@ -33,8 +33,9 @@ public class UserService {
 				newUser.setEmail(userRegistration.getEmail());
 		        newUser.setPassword(userRegistration.getPassword());
 		        newUser.setEnabled(false);
-		        newUser.setAccountNonLocked(false);
-		        newUser.setAccountNonExpired(false);
+		        newUser.setAccountNonLocked(true);
+		        newUser.setAccountNonExpired(true);
+		        newUser.setUserRole('u');
 				userMap.put(newUser.getUsername(), newUser);
 			}
 
