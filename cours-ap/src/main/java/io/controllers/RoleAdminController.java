@@ -29,6 +29,6 @@ public class RoleAdminController {
 	        
 	        userService.updateUserRole(user,userRoleChangeApiData);
 
-			return new ResponseEntity<>(new UserRegistrationResource(userRoleChangeApiData), HttpStatus.CREATED);
+			return new ResponseEntity<>(new UserRegistrationResource(userRoleChangeApiData), HttpStatus.OK);
 		}
 }
