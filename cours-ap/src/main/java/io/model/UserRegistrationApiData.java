@@ -4,6 +4,7 @@ public class UserRegistrationApiData {
 	private String username;
     private String password;
     private String email;
+    private char userRole;
 	public String getUsername() {
 		return username;
 	}
@@ -22,6 +23,13 @@ public class UserRegistrationApiData {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	public char getUserRole() {
+		return userRole;
+	}
+	public void setUserRole(char userRole) {
+		this.userRole = userRole;
+	}
+	
     
     
 }

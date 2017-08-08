@@ -13,7 +13,7 @@ public class UserRegistrationResource {
         this.email = userRegistration.getEmail();
     }
 
-	public String getUsername() {
+		public String getUsername() {
 		return username;
 	}
 

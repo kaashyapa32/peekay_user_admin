@@ -45,4 +45,16 @@ public class UserService {
 		public List<User> getUsers() {
 			return new ArrayList<>(userMap.values());
 		}
+
+
+		public void updateUserRole(User user,
+				UserRegistrationApiData userRoleChangeApiData) {
+			if (userMap.containsKey(user.getUsername()))
+			{
+				User tempUser = userMap.get(user.getUsername());
+				tempUser.setUserRole(userRoleChangeApiData.getUserRole());
+				userMap.put(tempUser.getUsername(), tempUser);
+			}
+			
+		}
 }
